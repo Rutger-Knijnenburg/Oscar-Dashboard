@@ -1,0 +1,89 @@
+@import "../../Styling/Variables.scss";
+
+
+
+.askoscar{
+    height:100%;
+    
+    .chatbox{
+        height:75%;
+        width:100%;
+        background-color: $white;
+        border-radius:15px;
+        position: relative;
+        .inputbox{
+            span,
+            input{
+                height:3rem;
+                width:100%;
+            }
+        }
+        .error{
+            .underlay{
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+            }
+            display:block;
+            position: absolute;
+            top:0;
+            left:0;
+            border:2px solid #d0342c;
+            background-color: #d0342cb7;
+            padding:1rem;
+            width:100%;
+            color: white;
+            z-index: 10000;
+        }
+        .messages{
+            height:100%;
+            max-height: 100%;
+            overflow-y: scroll;
+            padding-left:1rem;
+            padding-right:1rem;
+            margin-bottom:0.5rem;
+            padding-bottom:3rem;
+            &::-webkit-scrollbar {
+                width: 0.5em;
+              }
+               
+              &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+              }
+               
+              &::-webkit-scrollbar-thumb {
+                background-color: $secondary;
+                outline: 1px solid $primary;
+              }
+            .message{
+                width:50%;
+                padding:0.5rem;
+                padding-left:1rem;
+                padding-right:1rem;
+                margin-top: 0.5rem;
+                border-radius: 15px;
+                display:flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                .messagecontent{
+                    margin-left:0.5rem;
+                    margin-right:0.5rem;
+                }
+                &.user{
+                    background-color: $secondary;
+                    color: white;
+                    margin-left:50%;
+                    justify-content: flex-end;
+                }
+                &.oscar{
+                    
+                    background-color: $primary;
+                    color:white;
+                }
+            }
+        }
+       
+    }
+}

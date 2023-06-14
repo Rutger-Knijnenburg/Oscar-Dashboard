@@ -1,0 +1,7 @@
+@import "../Styling/Variables.scss";
+.oscarcard{
+  border:1px solid $primary;
+  &-title{
+    color: $primary;
+  }
+}
