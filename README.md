@@ -1,8 +1,21 @@
-# Personal tab across Microsoft 365
+![Oscar](https://github.com/Rutger-Knijnenburg/Oscar-Dashboard/blob/main/appPackage/color.png?raw=true)
 
-Personal tabs provide a great way to enhance the Microsoft Teams experience. Using personal tabs, you can provide a user access to their application right within Teams, without the user having to leave the experience or sign in again. Now, personal tabs can light up within other Microsoft 365 applications. You can build and run your personal tabs in Teams, both Outlook desktop and web experiences, and also the Microsoft 365 app on the web.
+# Oscar Onboarding Teams App
 
-![Personal tab demo](https://user-images.githubusercontent.com/11220663/167839153-0aef6adc-450e-4b8c-a28f-7d27005d1093.png)
+I had a blast working on this short project. It's a Teams tab application that uses the Microsoft Graph Toolkit extensively. It was my first time using the MGT toolkit, and I really enjoyed it!
+
+Setting up the Teams app was easy, way better then what I was used to do. 
+
+This app includes:
+
+- Meetup widget -> Encourage new employees to meet their new colleagues
+- Onboarding challanges -> Powered by Planner encourage the new employee to get to know the office etc
+- Todo -> A new work environment can be overwhelming. By using Microsoft To-Do the user could more easily manage their day-to-day workload
+- Agenda -> The first weeks are always very busy, so knowing what's upcoming on your agenda is nice
+- Files -> The onboarding files in a SharePoint site collection are shown to the employee to get their info faster
+- Ask Oscar -> Using Language Studio's Custom Question Answering service the employee can chitchat with Oscar, or ask Oscar questions about their new environment. The service is trained using some generated documents (policies) in Language Studio. 
+
+I wished to do so much more, so this is not over yet 😈 #WIP. 
 
 ## Prerequisites
 
@@ -26,11 +39,3 @@ Follow below instructions to get started with this application template for loca
 1. Executing the command `teamsfx provision --env local` in your project directory.
 1. Executing the command `teamsfx deploy --env local` in your project directory.
 1. Executing the command `teamsfx preview --env local --m365-host <m365-host>` in your project directory, where options for `m365-host` are `teams`, `outlook` or `office`.
-
-## References
-
-* [Extend a Teams personal tabs across Microsoft 365](https://docs.microsoft.com/microsoftteams/platform/m365-apps/extend-m365-teams-personal-tab?tabs=manifest-teams-toolkit)
-* [Teams Toolkit Documentations](https://docs.microsoft.com/microsoftteams/platform/toolkit/teams-toolkit-fundamentals)
-* [Teams Toolkit CLI](https://docs.microsoft.com/microsoftteams/platform/toolkit/teamsfx-cli)
-* [TeamsFx SDK](https://docs.microsoft.com/microsoftteams/platform/toolkit/teamsfx-sdk)
-* [Teams Toolkit Samples](https://github.com/OfficeDev/TeamsFx-Samples)
